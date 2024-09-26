@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Currency Converter</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <img src="./currency.png" alt="background">
+  <header>
+    <h1>Currency Converter</h1>
+  </header>
+  <main>
+    <form id="converter-form">
+      <label for="initial-currency">Initial Currency:</label>
+      <select id="initial-currency" name="initial-currency">
+        <option value="BRL">Brazilian Real (BRL)</option>
+        <option value="EUR">Euro (EUR)</option>
+        <option value="USD">United States Dollar (USD)</option>
+        <option value="GBP">British Pound (GBP)</option>
+        <option value="JPY">Japanese Yen (JPY)</option>
+      </select>
+      <label for="initial-amount">Initial Amount:</label>
+      <input type="number" id="initial-amount" name="initial-amount">
+      <label for="final-currency">Final Currency:</label>
+      <select id="final-currency" name="final-currency">
+        <option value="BRL">Brazilian Real (BRL)</option>
+        <option value="EUR">Euro (EUR)</option>
+        <option value="USD">United States Dollar (USD)</option>
+        <option value="GBP">British Pound (GBP)</option>
+        <option value="JPY">Japanese Yen (JPY)</option>
+      </select>
+      <button class="btn">
+        <span class="text">convert</span>
+        <span aria-hidden="" class="marquee">convert</span>
+      </button>
+    </form>
+    <p id="result"></p>
+  </main>
+  <footer>
+    <p>&copy; 2024 Currency Converter<br> <span>Created by:<b> <em>EDUARDO SOUSA</em> - FULLSTACK DEVELOPER</b><br> FOCUS DIGITAL LONDON. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
